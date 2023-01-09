@@ -1,0 +1,378 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    
+    body {
+        background-color: aliceblue;
+        overflow-x: hidden;
+        font-family: 'Red Hat Text', sans-serif;
+    }
+    
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        /*  background: #fff;
+        padding: 2rem 9%;*/
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    }
+    
+    .titulo {
+        text-align: center;
+        font-size: 3rem;
+        color: #3b8cde;
+        padding: 1rem;
+        margin: 2rem;
+    }
+    
+    .titulo span {
+        color: #195da2;
+    }
+    
+    .menu-bar {
+        background-color: #0cbccc;
+        height: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5%;
+        position: relative;
+    }
+    
+    .menu-bar ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    .menu-bar ul li {
+        padding: 10px 30px;
+        position: relative;
+    }
+    
+    .menu-bar ul li a {
+        font-size: 20px;
+        color: antiquewhite;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+    
+    .menu-bar ul li a:hover {
+        color: #195da2;
+    }
+    
+    .fas {
+        float: right;
+        margin-left: 10px;
+        padding-top: 3px;
+    }
+    /* dropdown menu style */
+    
+    .dropdown-menu {
+        display: none;
+    }
+    
+    .menu-bar ul li:hover .dropdown-menu {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: #0cbccc;
+    }
+    
+    .menu-bar ul li:hover .dropdown-menu ul {
+        display: block;
+        margin: 10px;
+    }
+    
+    .menu-bar ul li:hover .dropdown-menu ul li {
+        width: 150px;
+        padding: 10px;
+    }
+    
+    .banner {
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+        background: url(../img/banner_001.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .banner .content {
+        max-width: 50rem;
+    }
+    
+    .banner .content h3 {
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        font-size: 6rem;
+        color: #445251;
+    }
+    
+    .banner .content h1 {
+        position: absolute;
+        left: 60%;
+        top: 240px;
+        font-size: 4rem;
+        color: #445251;
+    }
+    
+    .banner .content span {
+        position: absolute;
+        left: 55%;
+        top: 320px;
+        font-size: 3.5rem;
+        color: #445251;
+        padding: 1rem 0;
+        line-height: 1.5;
+    }
+    /*Fisioterapia*/
+    
+    #fisio {
+        text-align: justify;
+    }
+    
+    #fisio p {
+        font-size: 1.5rem;
+        padding: .5rem 0;
+        padding-top: 1rem;
+        line-height: 1.5;
+        margin: 15px 40px 40px 40px;
+    }
+    
+    #blog .contenedor-blog #image1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    #blog #image1 {
+        margin: 25px;
+    }
+    
+    #blog img {
+        width: 100%;
+        max-width: 680px;
+    }
+    /*estudia contenedor
+    
+    .estudia {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        color: antiquewhite;
+        margin: 20px 15px 40px 15px;
+    }
+    
+    .estudia_sobre {
+        z-index: 100;
+        align-self: center;
+        width: 97%;
+        margin: 0 auto;
+        padding: 30px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+        background: #0cbccc;
+        grid-column: 1/4;
+        grid-row: 2/-2;
+    }
+    
+    .estudia_img {
+        margin: 0;
+        grid-column: 3/-1;
+        grid-row: 1/-1;
+    }
+    
+    .estudiar__img {
+        width: 100%;
+        height: 100%;
+        max-width: 680px;
+        object-fit: cover;
+    }
+    
+    .estudia_img--riht {
+        grid-column: 1/4;
+    }
+    
+    .estudia_sobre--left {
+        grid-column: 3/-1;
+    }*/
+    /*estudia contenedor__segunda seccion
+    
+    .estudia2 {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        color: antiquewhite;
+        margin: 40px 15px 10px 15px;
+    }
+    
+    .estudia_sobre2 {
+        z-index: 100;
+        align-self: center;
+        width: 97%;
+        margin: 0 auto;
+        padding: 30px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+        background: #0cbccc;
+        grid-column: 1/4;
+        grid-row: 2/-2;
+    }
+    
+    .estudia_img2 {
+        margin: 0;
+        grid-column: 3/-1;
+        grid-row: 1/-1;
+    }
+    
+    .estudiar__img2 {
+        width: 100%;
+        height: 100%;
+        max-width: 680px;
+        object-fit: cover;
+    }
+    
+    .estudia_img2--left {
+        grid-column: 1/4;
+    }
+    
+    .estudia_sobre--right {
+        grid-column: 3/-1;
+    }*/
+    
+    @media screen and (max-width: 375px) {
+        body {
+            margin-top: 4rem;
+        }
+        header {
+            width: 100%;
+        }
+    }
+    
+    .card_contenedor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        background: #0cbccc;
+        border-radius: 25px;
+        overflow: hidden;
+        transition: .5s;
+        margin: 15px 20px;
+    }
+    
+    .card:hover {
+        transform: translateY(-15px);
+    }
+    
+    .card .head {
+        height: 125px;
+        width: 100%;
+        position: relative;
+    }
+    
+    .card .head .img {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        padding: 5px;
+        bottom: -30%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    
+    .card .head .img img {
+        width: 100%;
+        height: 100%;
+        margin-top: 15px;
+        object-fit: cover;
+    }
+    
+    .card .description {
+        height: 200px;
+        padding: 40px 20px 20px 20px;
+        text-align: center;
+    }
+    
+    .card .description h6 {
+        margin-top: 18px;
+        color: antiquewhite;
+    }
+    
+    .card_contenedor p {
+        text-align: justify;
+        font-size: 1.5rem;
+        padding: .5rem 0;
+        padding-top: 1rem;
+        line-height: 1.5;
+        margin: 15px 40px 40px 40px;
+    }
+    /*SECCION ACUATICA*/
+    
+    #acuatica {
+        text-align: justify;
+    }
+    
+    #acuatica p {
+        font-size: 1.5rem;
+        padding: .5rem 0;
+        padding-top: 1rem;
+        line-height: 1.5;
+        margin: 15px 40px 40px 40px;
+    }
+    /* Knowledge */
+    
+    .knowledge {
+        color: antiquewhite;
+        box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+        background: #0cbccc;
+        background-size: 20px 20px;
+        background-position: 0 0, 10px 10px;
+        overflow: hidden;
+        margin: 15px 40px 40px 40px;
+    }
+    
+    .knowledge__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        align-items: center;
+    }
+    
+    .knowledge__picture {
+        max-width: 500px;
+        margin-top: 15px;
+    }
+    
+    .knowledge__paragraph {
+        line-height: 1.7;
+        margin-bottom: 15px;
+        text-align: justify;
+    }
+    
+    .knowledge__img {
+        width: 100%;
+        display: block;
+        border-radius: 20%;
+    }
+    
+    .knowledge:hover {
+        transform: translateY(15px);
+    }
